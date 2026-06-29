@@ -62,3 +62,46 @@ document.querySelectorAll('.step-card').forEach((card, index) => {
 document.querySelectorAll('.pricing-card').forEach((card, index) => {
     card.style.transitionDelay = `${index * 0.1}s`;
 });
+
+// Contact form validation
+const contactForm = document.getElementById('contactForm');
+const formSuccess = document.getElementById('formSuccess');
+
+contactForm.addEventListener('submit', function (e) {
+    e.preventDefault();
+    let isValid = true;
+
+    const name = document.getElementById('contactName');
+    const email = document.getElementById('contactEmail');
+    const subject = document.getElementById('contactSubject');
+    const message = document.getElementById('contactMessage');
+
+    [name, email, subject, message].forEach(field => field.classList.remove('is-invalid'));
+
+    if (!name.value.trim()) {
+        name.classList.add('is-invalid');
+        isValid = false;
+    }
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email.value.trim())) {
+        email.classList.add('is-invalid');
+        isValid = false;
+    }
+
+    if (!subject.value.trim()) {
+        subject.classList.add('is-invalid');
+        isValid = false;
+    }
+
+    if (!message.value.trim()) {
+        message.classList.add('is-invalid');
+        isValid = false;
+    }
+
+    if (isValid) {
+        formSuccess.classList.remove('d-none');
+        contactForm.reset();
+        setTimeout(() => formSuccess.classList.add('d-none'), 5000);
+    }
+});

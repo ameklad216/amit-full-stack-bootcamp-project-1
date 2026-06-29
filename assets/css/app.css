@@ -475,8 +475,13 @@ section {
     content: '✓';
     position: absolute;
     left: 0;
-    color: var(--color-teal);
+    color: #198754;
     font-weight: bold;
+}
+
+.pricing-features li.not-included::before {
+    content: '✗';
+    color: #dc3545;
 }
 
 /* Language Selector */
@@ -598,6 +603,59 @@ section {
 .final-cta .btn-primary:hover {
     background: var(--color-cream);
     color: var(--color-teal-dark);
+}
+
+/* Contact Section */
+.contact-section {
+  background: var(--color-light-gray);
+}
+
+.contact-form-wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+  background: white;
+  padding: 3rem;
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+}
+
+.form-group label {
+  font-weight: 600;
+  color: var(--color-navy);
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.form-control {
+  border: 2px solid var(--color-sand);
+  border-radius: var(--border-radius);
+  padding: 12px 16px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: var(--color-teal);
+  box-shadow: 0 0 0 3px rgba(196, 9, 7, 0.1);
+}
+
+.form-control.is-invalid {
+  border-color: #dc3545;
+}
+
+.invalid-feedback {
+  color: #dc3545;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.form-success {
+  color: #198754;
+  font-size: 1.125rem;
+  font-weight: 600;
+  padding: 1rem;
+  background: #d1e7dd;
+  border-radius: var(--border-radius);
 }
 
 /* Footer */
