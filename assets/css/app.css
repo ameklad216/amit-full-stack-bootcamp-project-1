@@ -4,10 +4,10 @@
     --color-ink: #2d3748;
     --color-cream: #faf8f5;
     --color-sand: #e8e4dc;
-    --color-teal: #4a9b8e;
-    --color-teal-light: #5eb4a4;
-    --color-teal-dark: #3a7d72;
-    --color-warm-gray: #6b7280;
+    --color-teal: #c40907;
+    --color-teal-light: #b30706;
+    --color-teal-dark: #970403;
+    --color-warm-gray: black;
     --color-light-gray: #f3f4f6;
     
     --font-display: 'Fraunces', serif;
@@ -555,7 +555,7 @@ section {
 
 /* Final CTA */
 .final-cta {
-    background: linear-gradient(135deg, var(--color-navy) 0%, var(--color-ink) 100%);
+    background: #c40907;
     color: white;
     padding: 100px 0;
     text-align: center;
@@ -602,7 +602,7 @@ section {
 
 /* Footer */
 .footer {
-    background: var(--color-navy);
+    background: black;
     color: rgba(255, 255, 255, 0.8);
     padding: 60px 0 30px;
 }

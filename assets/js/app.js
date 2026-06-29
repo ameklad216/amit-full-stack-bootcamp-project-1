@@ -27,38 +27,6 @@ document.querySelectorAll('.feature-card, .step-card, .pricing-card').forEach(el
     observer.observe(el);
 });
 
-// Language card interactions
-const languageCards = document.querySelectorAll('.language-card');
-languageCards.forEach(card => {
-    card.addEventListener('click', function () {
-        languageCards.forEach(c => c.classList.remove('active'));
-        this.classList.add('active');
-        const lang = this.getAttribute('data-lang');
-        const selector = document.getElementById('languageSelector');
-        selector.value = lang;
-        selector.dispatchEvent(new Event('change'));
-    });
-});
-
-// Language selector change
-document.getElementById('languageSelector').addEventListener('change', function () {
-    const selectedLang = this.value;
-    languageCards.forEach(card => {
-        if (card.getAttribute('data-lang') === selectedLang) {
-            languageCards.forEach(c => c.classList.remove('active'));
-            card.classList.add('active');
-        }
-    });
-    const next = new URL(window.location.href);
-    next.searchParams.set('lang', selectedLang);
-    window.location.href = next.toString();
-});
-
-// Set default active language
-const activeLang = 'en';
-const activeCard = document.querySelector(`.language-card[data-lang="${activeLang}"]`);
-if (activeCard) activeCard.classList.add('active');
-
 // Smooth scroll for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
