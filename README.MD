@@ -1,8 +1,8 @@
-# Project 1 — Billora: SaaS Landing Page (Conversion-Focused Design)
+# Project 1 — BillCraft: SaaS Landing Page (Conversion-Focused Design)
 
 ## Goal
 
-Rebuild the current starter project as **Billora**, a fictional SaaS platform that helps freelancers, agencies, and small businesses create professional invoices, manage clients, and track payments.
+Rebuild the current starter project as **BillCraft**, a fictional SaaS platform that helps freelancers, agencies, and small businesses create professional invoices, manage clients, and track payments.
 
 Edit only:
 
@@ -10,7 +10,7 @@ Edit only:
 * `assets/css/app.css`
 * `assets/js/app.js`
 
-Do not leave old product names such as `BillCraft` or `InvoicePro` in the final version.
+Do not leave old product names such as `Billora` or `InvoicePro` in the final version.
 
 ## Required Sections
 
@@ -33,7 +33,7 @@ Your final landing page must include:
 Create Professional Invoices. Get Paid Faster.
 
 **Description:**
-Billora helps freelancers and growing businesses create branded invoices, track payments, and manage clients from one simple dashboard.
+BillCraft helps freelancers and growing businesses create branded invoices, track payments, and manage clients from one simple dashboard.
 
 **Primary CTA:**
 Start Free Trial
@@ -49,4 +49,4 @@ See Pricing
 * Add hover effects and scroll-reveal animations.
 * Add meaningful `alt` text to every image.
 * Add a working front-end contact form that validates name, email, and message.
-* Use Billora consistently across headings, buttons, footer, and page title.
+* Use BillCraft consistently across headings, buttons, footer, and page title.
